@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.PrimariaFragment">
+
+
+    <ImageButton
+        android:id="@+id/imageSpanish"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/libros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <TextView
+        android:id="@+id/tvSpanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/tamtexto2"
+        android:text="@string/Txspanish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSpanish" />
+
+    <ImageButton
+        android:id="@+id/imageMat"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/mat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <TextView
+        android:id="@+id/tvMat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Txmat"
+        android:textSize="@dimen/tamtexto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMat" />
+
+
+    <ImageButton
+        android:id="@+id/imageSociale"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/sociales"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpanish"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <TextView
+        android:id="@+id/tvSociale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/tamtexto2"
+        android:text="@string/TxSociale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSociale" />
+
+    <ImageButton
+        android:id="@+id/imageIngles"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/ingles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMat"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <TextView
+        android:id="@+id/tvIngles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="112dp"
+        android:textSize="@dimen/tamtexto2"
+        android:text="@string/TxIngles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIngles" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

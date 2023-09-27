@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Education_hackathon</string>
+    <string name="title_activity_inicio_menu">InicioMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="Txspanish">Español</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="NivelBasico">Nivel Basico</string>
+    <string name="NivelIntermedio">Nivel Intermedio</string>
+    <string name="NivelAvanzado">Nivel Avanzado</string>
+
+    <string name="TxtLengua1">Lengua y Literatura\nPrimer Grado</string>
+
+    <string name="hint_UserName">Correo</string>
+    <string name="hint_Password">Contraseña</string>
+    <string name="strContrasenia">Contraseña</string>
+    <string name="strLogin">Iniciar sesión</string>
+    <string name="strNoTieneCuenta">No tienes cuenta?</string>
+    <string name="strCreaUna">Crea una aquí</string>
+    <string name="stremail">Correo</string>
+    <string name="strConfirmarPassword">Confirmar contraseña</string>
+    <string name="strCrearCuenta">Crear cuenta</string>
+    <string name="strinto">Ingresar</string>
+    <string name="primaria">Primaria</string>
+    <string name="secundaria">Secundaria</string>
+    <string name="Cuenta">Perfil</string>
+    <string name="Usuario">Usuario</string>
+    <string name="correoUsuario">usuario.nuevo@gmail.com</string>
+    <string name="Txmat">Matematicas</string>
+    <string name="TxSociale">Sociales</string>
+    <string name="TxIngles">Ingles</string>
+    <string name="Perfil">Perfil de Usuario</string>
+    <string name="Videolyl1">Video de LyL\nPrimer Grado</string>
+    <string name="libro2lyl">Lengua y Literatura\nSegundo Grado</string>
+    <string name="video2lyl">Video de LyL\nSegundo Grado</string>
+    <string name="TxtLengua3">Lengua y Literatura\nTercer Grado</string>
+    <string name="Videolyl3">Video de LyL\nTercer Grado</string>
+    <string name="libro4lyl">Lengua y Literatura\nCuarto Grado</string>
+    <string name="video4lyl">Video de LyL\nCuarto Grado</string>
+    <string name="TxtLengua5">Lengua y Literatura\nQuinto Grado</string>
+    <string name="Videolyl5">Video de LyL\nQuinto Grado</string>
+    <string name="libro6lyl">Lengua y Literatura\nSexto Grado</string>
+    <string name="video6lyl">Video de LyL\nSexto Grado</string>
+    <string name="TxtMat1">Matematicas\nPrimer Grado</string>
+    <string name="VideoMat1">Video de Mat.\nPrimer Grado</string>
+    <string name="libro2Mat">Matematicas\nSegundo Grado</string>
+    <string name="video2Mat">Video de Mat.\nSegundo Grado</string>
+    <string name="libro4Mat">Matematicas\nCuarto Grado</string>
+    <string name="video4Mat">Video de Mat.\nCuarto Grado</string>
+    <string name="TxtMat3">Matematicas\n Tercer Grado</string>
+    <string name="VideoMat3">Video de Mat\nTercer Grado</string>
+    <string name="TxtMat5">Matematicas\nQuinto Grado</string>
+    <string name="VideoMat5">Video de Mat.\nQuinto Grado</string>
+    <string name="libro6Mat">Matematicas\nSexto Grado</string>
+    <string name="video6Mat">Video de Mat.\nSexto Grado</string>
+    <string name="TxtQui1">Quimica de \nPrimer Grado</string>
+    <string name="TxtHistoria1">Historia de\nNicaragua</string>
+
+</resources>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spanish">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Nivel Basico -->
+
+            <TextView
+                android:id="@+id/txtNivelBasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/NivelBasico"
+                android:textSize="@dimen/tamtexto3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ViewBasic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam1"
+                android:layout_marginTop="12dp"
+                android:background="@color/black"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelBasic">
+            </View>
+            <!-- Libro primer grado -->
+            <ImageButton
+                android:id="@+id/LenguayLit1"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/lengua1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewBasic"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvlengua1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/TxtLengua1"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LenguayLit1" />
+
+            <!-- Video primer grado -->
+            <ImageButton
+                android:id="@+id/LyL1Video"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/lengua1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewBasic"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvvideolyl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="96dp"
+                android:text="@string/Videolyl1"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL1Video" />
+
+            <!-- Libro segundo Grado -->
+            <ImageButton
+                android:id="@+id/LyL2Libro"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/lyl2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvlengua1"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvlibro2lyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/libro2lyl"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL2Libro"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Video segundo Grado -->
+            <ImageButton
+                android:id="@+id/LyL2Video"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/lyl2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvlengua1"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvVideo2lyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="84dp"
+                android:text="@string/video2lyl"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL2Libro"
+                tools:ignore="MissingConstraints" />
+
+
+            <!-- Nivel Intermedio -->
+
+            <TextView
+                android:id="@+id/txtNivelIntermedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/NivelIntermedio"
+                android:textSize="@dimen/tamtexto3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvlibro2lyl"
+                tools:ignore="MissingConstraints" />
+            <View
+                android:id="@+id/ViewIntermedio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam1"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/margen8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelIntermedio"/>
+
+            <!-- Libro Tercer grado -->
+            <ImageButton
+                android:id="@+id/LenguayLit3"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/lyl3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewIntermedio"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvlengua3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/TxtLengua3"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LenguayLit3" />
+
+            <!-- Video tercer grado -->
+            <ImageButton
+                android:id="@+id/LyL3Video"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/lyl3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewIntermedio"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvvideolyl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="96dp"
+                android:text="@string/Videolyl3"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL3Video" />
+
+            <!-- Libro cuarto Grado -->
+            <ImageButton
+                android:id="@+id/LyL4Libro"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/lyl4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvlengua3"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvlibro4lyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/libro4lyl"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL4Libro"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Video cuarto Grado -->
+            <ImageButton
+                android:id="@+id/LyL4Video"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/lyl4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvvideolyl3"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvVideo4lyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="84dp"
+                android:text="@string/video4lyl"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL4Video"
+                tools:ignore="MissingConstraints" />
+
+
+            <!-- Nivel Avanzado -->
+            <TextView
+                android:id="@+id/txtNivelAvanzado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/NivelAvanzado"
+                android:textSize="@dimen/tamtexto3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvlibro4lyl"
+                tools:ignore="MissingConstraints" />
+            <View
+                android:id="@+id/ViewAvanzado"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam1"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/margen8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelAvanzado"/>
+
+            <!-- Libro Quinto grado -->
+            <ImageButton
+                android:id="@+id/LenguayLit5"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/lyl5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewAvanzado"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvlengua5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/TxtLengua5"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LenguayLit5" />
+
+            <!-- Video quinto grado -->
+            <ImageButton
+                android:id="@+id/LyL5Video"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/lyl5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewAvanzado"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvvideolyl5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="96dp"
+                android:text="@string/Videolyl5"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL5Video" />
+
+            <!-- Libro sexto Grado -->
+            <ImageButton
+                android:id="@+id/LyL6Libro"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/lyl6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvvideolyl5"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvlibro6lyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/libro6lyl"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL6Libro"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Video sexto Grado -->
+            <ImageButton
+                android:id="@+id/LyL6Video"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="68dp"
+                android:background="@drawable/lyl6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvvideolyl5"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvVideo6lyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="84dp"
+                android:text="@string/video6lyl"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LyL6Video"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

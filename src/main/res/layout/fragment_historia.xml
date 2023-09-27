@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Historia">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Nivel Basico -->
+            <TextView
+                android:id="@+id/txtNivelBasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/NivelBasico"
+                android:textSize="@dimen/tamtexto3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ViewBasic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam1"
+                android:layout_marginTop="12dp"
+                android:background="@color/black"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelBasic">
+            </View>
+            <!-- Libro primer grado -->
+            <ImageButton
+                android:id="@+id/Historia7"
+                android:layout_width="114dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/historia"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ViewBasic"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tvHistoria1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/TxtHistoria1"
+                android:textSize="@dimen/tamTexto5"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Historia7" />
+
+            <!-- Nivel Intermedio -->
+            <TextView
+                android:id="@+id/txtNivelIntermedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/NivelIntermedio"
+                android:textSize="@dimen/tamtexto3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHistoria1"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ViewIntermedio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam1"
+                android:layout_marginTop="@dimen/margen8"
+                android:background="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelIntermedio" />
+
+
+            <TextView
+                android:id="@+id/txtNivelAvanzado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:text="@string/NivelAvanzado"
+                android:textSize="@dimen/tamtexto3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.151"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ViewIntermedio"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tam1"
+                android:layout_marginTop="@dimen/margen8"
+                android:background="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNivelAvanzado" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

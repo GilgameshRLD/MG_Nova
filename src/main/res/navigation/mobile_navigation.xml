@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navprimaria">
+
+    <fragment
+        android:id="@+id/navprimaria"
+        android:name="com.example.education_hackathon.ui.home.PrimariaFragment"
+        android:label="@string/primaria"
+        tools:layout="@layout/fragment_primaria" >
+        <action
+            android:id="@+id/action_nav_home_to_spanish"
+            app:destination="@id/spanish" />
+        <action
+            android:id="@+id/action_navprimaria_to_matematica"
+            app:destination="@id/matematica" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navsecundaria"
+        android:name="com.example.education_hackathon.ui.gallery.SecundariaFragment"
+        android:label="@string/secundaria"
+        tools:layout="@layout/fragment_secundaria" >
+        <action
+            android:id="@+id/action_navsecundaria_to_historia"
+            app:destination="@id/historia" />
+        <action
+            android:id="@+id/action_navsecundaria_to_quimica"
+            app:destination="@id/quimica" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.education_hackathon.ui.slideshow.SlideshowFragment"
+        android:label="@string/Perfil"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/spanish"
+        android:name="com.example.education_hackathon.Spanish"
+        android:label="Español Primaria"
+        tools:layout="@layout/fragment_spanish" />
+    <fragment
+        android:id="@+id/matematica"
+        android:name="com.example.education_hackathon.Matematica"
+        android:label="Matematica Primaria"
+        tools:layout="@layout/fragment_matematica" />
+    <fragment
+        android:id="@+id/historia"
+        android:name="com.example.education_hackathon.Historia"
+        android:label="Historia Secundaria"
+        tools:layout="@layout/fragment_historia" />
+    <fragment
+        android:id="@+id/quimica"
+        android:name="com.example.education_hackathon.Quimica"
+        android:label="Quimica Secundaria"
+        tools:layout="@layout/fragment_quimica" />
+</navigation>

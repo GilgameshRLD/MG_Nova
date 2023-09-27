@@ -1,0 +1,92 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".CreateActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-62dp"
+    android:background="#BAB6B6">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#003296"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbCrearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/statusBarBackground">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvEmailCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="29dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="30dp"
+        android:drawableTint="?attr/itemBackground"
+        android:hint="@string/stremail"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvPasswordCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="30dp"
+        android:drawableTint="?attr/itemBackground"
+        android:hint="@string/hint_Password"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailCuenta"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvConfPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="30dp"
+        android:drawableTint="?attr/itemBackground"
+        android:hint="@string/strConfirmarPassword"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordCuenta"></com.google.android.material.textfield.TextInputEditText>
+
+    <Button
+        android:id="@+id/btnCrearcuenta"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="?attr/itemBackground"
+        android:drawablePadding="20dp"
+        android:hint="@string/strinto"
+        android:textColorHint="#FBF8F8"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
